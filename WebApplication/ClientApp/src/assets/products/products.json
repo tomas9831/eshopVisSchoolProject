@@ -1,0 +1,62 @@
+[
+  {
+    "productId": 1,
+    "productName": "World of Warcraft",
+    "productCode": "blizz_wow",
+    "releaseDate": "May 18, 2004",
+    "description": "World of Warcraft (WoW) is a massively multiplayer online role-playing game (MMORPG) released in 2004 by Blizzard Entertainment. It is the fourth released game set in the Warcraft fantasy universe. World of Warcraft takes place within the Warcraft world of Azeroth, approximately four years after the events at the conclusion of Blizzard's previous Warcraft release, Warcraft III: The Frozen Throne. The game was announced in 2001, and was released for the 10th anniversary of the Warcraft franchise on November 23, 2004.",
+    "price": 799.99,
+    "starRating": 5,
+    "imageUrl": "assets/wow.jpg"
+  },
+  {
+    "productId": 2,
+    "productName": "Starcraft II",
+    "productCode": "blizz_sc",
+    "releaseDate": "March 9, 2010",
+    "description": "StarCraft II: Wings of Liberty is a science fiction real-time strategy video game developed and published by Blizzard Entertainment. It was released worldwide in July 2010 for Microsoft Windows and Mac OS X.[6] A sequel to the 1998 video game StarCraft and the Brood War expansion pack, the game is actually split into three installments: the base game, subtitled Wings of Liberty, an expansion pack, Heart of the Swarm, and a stand-alone expansion pack, Legacy of the Void. In March 2016, a campaign pack called StarCraft II: Nova Covert Ops was also released.  ",
+    "price": 499.99,
+    "starRating": 4,
+    "imageUrl": "assets/sc2.jpg"
+  },
+  {
+    "productId": 3,
+    "productName": "Diablo 3",
+    "productCode": "blizz_d3",
+    "releaseDate": "October 29, 2012",
+    "description": "Diablo III is a dungeon crawler hack-and-slash action role-playing game developed and published by Blizzard Entertainment as the third installment in the Diablo franchise. It was released for Microsoft Windows and OS X in May 2012, the PlayStation 3 and Xbox 360 in September 2013, the PlayStation 4 and Xbox One in August 2014, and the Nintendo Switch in November 2018. In the game, players choose to play as one of seven character classes – Barbarian, Crusader, Demon Hunter, Monk, Necromancer, Witch Doctor, or Wizard – and are tasked with defeating the Lord of Terror, Diablo, as in previous games in the series. ",
+    "price": 399.99,
+    "starRating": 4,
+    "imageUrl": "assets/d3.jpg"
+  },
+  {
+    "productId": 4,
+    "productName": "Overwatch",
+    "productCode": "blizz_ow",
+    "releaseDate": "May 10, 2016",
+    "description": "Overwatch is a team-based multiplayer first-person shooter developed and published by Blizzard Entertainment. Described as a hero shooter, Overwatch assigns players into two teams of six, with each player selecting from a roster of over 30 characters, known as heroes, each with a unique style of play that is divided into three general roles that fit their purpose. Players on a team work together to secure and defend control points on a map or escort a payload across the map in a limited amount of time.",
+    "price": 249.99,
+    "starRating": 4.5,
+    "imageUrl": "assets/ow.jpg"
+  },
+  {
+    "productId": 5,
+    "productName": "Call of Duty: Modern Warfare",
+    "productCode": "act_mw",
+    "releaseDate": "November 18, 2019",
+    "description": "Call of Duty: Modern Warfare is an upcoming first-person shooter video game that is being developed by Infinity Ward and published by Activision. It will serve as the sixteenth overall installment in the Call of Duty series as well as a soft reboot of the Modern Warfare sub-series. It is scheduled to be released on October 25, 2019, for Microsoft Windows, PlayStation 4, and Xbox One. ",
+    "price": 1599.99,
+    "starRating": 4.3,
+    "imageUrl": "assets/mw.jpg"
+  },
+  {
+    "productId": 6,
+    "productName": "Call of Duty: Black Ops 4",
+    "productCode": "act_bo4",
+    "releaseDate": "November 11, 2018",
+    "description": "Call of Duty: Black Ops 4 (stylized as Call of Duty: Black Ops IIII) is a multiplayer first-person shooter developed by Treyarch and published by Activision. It was released worldwide for Microsoft Windows, PlayStation 4, and Xbox One on October 12, 2018. It is a sequel to the 2015 game Call of Duty: Black Ops III, the fifth entry in the Black Ops sub-series, and the 15th installment in the Call of Duty series overall. ",
+    "price": 699.99,
+    "starRating": 3.3,
+    "imageUrl": "assets/bo4.jpg"
+  }
+]

@@ -1,0 +1,8 @@
+<label for="name">Game: ID </label>
+<br>
+    <input [(ngModel)]="GameID">
+    <br>
+    <button class="mat-raised-button" (click)="submitSearch()">
+        Search
+      </button>
+<p *ngIf="BuyoutPrice"> We can buy your game: {{GameName}} for {{BuyoutPrice}}</p>

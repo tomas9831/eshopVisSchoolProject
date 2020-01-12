@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Log>
+  <freeID>5</freeID>
+  <Log>
+    <id>0</id>
+    <name>test</name>
+  </Log>
+  <Log>
+    <id>1</id>
+    <name>test</name>
+  </Log>
+  <Log>
+    <id>2</id>
+    <name>test</name>
+  </Log>
+  <Log>
+    <id>3</id>
+    <name>18. 12. 2019 0:00:00</name>
+  </Log>
+  <Log>
+    <id>4</id>
+    <name>18. 12. 2019 0:00:00newgame</name>
+  </Log>
+</Log>

@@ -1,0 +1,130 @@
+<div class="card">
+  <div class="card-header">
+    {{ title }}
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-2">
+        Search:
+        <input type="text" [(ngModel)]="filterText" />
+      </div>
+    </div>
+    <div class="row">
+      <h4 class="header">Searched by: {{ filterText }}</h4>
+    </div>
+  </div>
+  <div class="table-responsive">
+    <table class="table" *ngIf="gameList && gameList.length">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Picture</th>
+          <th>Pegi</th>
+          <th>Price New</th>
+          <th>Price Old</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let games of gameList | searchFilter: filterText">
+          <td>
+            <button class="btn btn-link" (click)="onProduct(games.name)">
+              {{ games.name }}
+            </button>
+          </td>
+          <td>
+            <img
+              *ngIf="showImage"
+              [src]="games.coverImage"
+              [title]="games.name"
+              [style.width.px]="imageWidth"
+            />
+          </td>
+
+          <td>{{ games.pegi }}</td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-light"
+              (click)="onBuy(games, 'new', games.pegi)"
+            >
+              {{ games.priceNew | currency: "CZK" }}
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-light"
+              (click)="onBuy(games, 'old', games.pegi)"
+            >
+              {{ games.priceOld | currency: "CZK" }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<br />
+<div class="card">
+  <div class="card-header">
+    Shopping cart
+  </div>
+  <table class="table" *ngIf="itemAdded">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Availability</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let game of chosenGames">
+        <td>{{ game.id }}</td>
+        <td>{{ game.name }}</td>
+        <td>{{ game.availability }}</td>
+        <td>{{ game.price | currency: "CZK" }}</td>
+      </tr>
+    </tbody>
+    <label class="radio-inline"
+      ><input
+        type="radio"
+        name="optradio"
+        checked
+        (click)="toggleDelivery()"
+      />Delivery</label
+    >
+    <label class="radio-inline"
+      ><input type="radio" name="optradio" (click)="toggleShop()" />Shop</label
+    >
+    <br />
+    <div class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+      <label class="custom-control-label" for="defaultUnchecked"(click)="toggleCash()" >Cash</label>
+    </div>
+    
+    <!-- Default checked -->
+    <div class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+      <label class="custom-control-label" for="defaultChecked" (click)="toggleCard()">Card</label>
+    </div>
+    <br />
+
+    Total price:
+    {{
+      totalPrice | currency: "CZK"
+    }}
+    <div class="row">
+      <div class="col-md-4">
+        <br />
+        <button type="button" class="btn btn-primary" (click)="onOrder()">
+          Order
+        </button>
+        <button type="button" class="btn btn-primary" (click)="onOrder2()">
+          Order2
+        </button>
+      </div>
+    </div>
+  </table>
+</div>
+
