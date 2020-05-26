@@ -1,2 +1,3 @@
 # eshopVisSchoolProject
-test
+MVC .NET CORE, AngularJS
+nedokončený semestrálny projekt
